@@ -49,26 +49,29 @@
       * `otool`
       * `jtool2`
       * `rabin2`
+    * 恢复符号表
+      * `restore-symbol`
     * 分析代码逻辑
-      * IDA：Functions、Strings、Imports、F5伪代码等好用的功能模块
+      * IDA：Functions、Strings、Imports、F5伪代码、导出全部伪代码等好用的功能和模块
         * ![ida_youtube](../../assets/img/ida_youtube.jpg)
       * Hopper
         * ![hooper_youtube](../../assets/img/hooper_youtube.jpg)
 * 动态调试
   * 用各种调试方式和工具去调试app的逻辑
     * 常用调试方式
-      * 图形界面：`XCode`+`MonkeyDev`
+      * 图形界面：`Xcode`+`MonkeyDev`
         * ![xcode_monkeydev_youtube](../../assets/img/xcode_monkeydev_youtube.jpg)
-        * XCode内部也有`lldb`
+        * Xcode内部也有`lldb`
       * 命令行：`debugserver`+`lldb`
         * ![debugserver_lldb_aweme](../../assets/img/debugserver_lldb_aweme.jpg)
     * 常用逆向工具
       * `Frida`：hook对应函数，调试输入参数和返回值
         * ![frida_aweme](../../assets/img/frida_aweme.jpg)
-      * `Cycript`：查看页面元素的类和属性、实时修改各种值
-        * ![cycript_debug_ui](../../assets/img/cycript_debug_ui.png)
-      * `Reveal`：查看UI页面详细属性
-        * ![reveal_debug_ui_youtube](../../assets/img/reveal_debug_ui_youtube.png)
+      * 分析界面元素
+        * `Cycript`：查看页面元素的类和属性、实时修改各种值
+          * ![cycript_debug_ui](../../assets/img/cycript_debug_ui.png)
+        * `Reveal`：查看UI页面详细属性
+          * ![reveal_debug_ui_youtube](../../assets/img/reveal_debug_ui_youtube.png)
   * 目的：搞懂我们所关心的app内部相关逻辑
     * 用于后续去写hook代码去修改成我们要的逻辑和值
 * 最后才是：Tweak插件开发
@@ -82,7 +85,7 @@
       * `Theos`/`Logos`：写hook源码.xm，基于Makefile去编译
         * ![logos_vscode_make](../../assets/img/logos_vscode_make.png)
     * 图形界面
-      * `iOSOpenDev`：把Logos等开发集成进了XCode
+      * `iOSOpenDev`：把Logos等开发集成进了Xcode
         * 支持Logos、CaptainHook等
         * ![iosopendev_xcode_create](../../assets/img/iosopendev_xcode_create.png)
       * `MonkeyDev`：iOSOpenDev的改进版
